@@ -4,6 +4,7 @@ import {dallieRoute,DBroute,post} from './Routes/index.js'
 import dotenv from "dotenv"
 import { MongoConnect } from "./MongoDB/connect.js"
 const app = express()
+const port = process.env.PORT || 8000
 
 // console.log(dallieRoute)
 // HIGHER_PRIORITY_FUNCTIONS
@@ -23,7 +24,7 @@ app.get("/", (req, res) => {
 const ApplicationConnect = () => {
     try {
         MongoConnect()
-        app.listen(8000, () => {
+        app.listen(port, () => {
             console.log("server is listening in port http://localhost:8000")
         })
     } catch (error) {
