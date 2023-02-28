@@ -5,7 +5,8 @@
   "description": "a web application to generate ai images",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node app.js"
   },
   "author": "nayan",
   "license": "ISC",
