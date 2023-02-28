@@ -25,7 +25,7 @@ const ApplicationConnect = () => {
     try {
         MongoConnect()
         app.listen(port, () => {
-            console.log("server is listening in port http://localhost:8000")
+            console.log(`server is listening in port http://localhost:${port}`)
         })
     } catch (error) {
         console.log(error)
